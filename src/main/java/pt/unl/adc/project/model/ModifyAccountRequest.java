@@ -2,7 +2,7 @@ package pt.unl.adc.project.model;
 
 public class ModifyAccountRequest {
 
-    private ModifyAccountData input;
+    private ModifyAccountData account;
     private SessionToken token;
     /**
      * Classe que representa o pedido para a operação op5-modifyAccount.
@@ -11,11 +11,11 @@ public class ModifyAccountRequest {
     }
 
     public ModifyAccountData getInput() {
-        return input;
+        return account;
     }
 
     public void setInput(ModifyAccountData input) {
-        this.input = input;
+        this.account = input;
     }
 
     public SessionToken getToken() {

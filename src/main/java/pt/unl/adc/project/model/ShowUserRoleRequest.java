@@ -1,20 +1,21 @@
 package pt.unl.adc.project.model;
 
-public class ShowUsersRequest {
+public class ShowUserRoleRequest {
 
-    private Object user;
+    private ShowUserRoleData user;
     private SessionToken token;
+
     /**
-     * Classe que representa o pedido para a operação op4-showUsers.
+     * Classe que representa o corpo completo do pedido para mostrar o role de um utilizador.
      */
-    public ShowUsersRequest() {
+    public ShowUserRoleRequest() {
     }
 
-    public Object getInput() {
+    public ShowUserRoleData getInput() {
         return user;
     }
 
-    public void setInput(Object input) {
+    public void setInput(ShowUserRoleData input) {
         this.user = input;
     }
 
